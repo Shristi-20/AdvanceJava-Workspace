@@ -1,0 +1,37 @@
+<!--  <!DOCTYPE html>  <html>  <head>  
+<script src="jquery.js"></script>  
+<script>  
+$(document).ready(function(){  
+        $("#hide").click(function(){  
+        $("p").hide();  // $("p").hide(1000); 
+    });  
+    $("#show").click(function(){  
+        $("p").show();  // $("p").show(1500); 
+    });  
+});  
+</script>  </head>  <body>  
+<p>  <b>The Poem:</b><br/>  
+Twinkle, twinkle, little star<br/>  
+How I wonder what you are  </p>  
+<button id="hide">Hide</button>  
+<button id="show">Show</button>  
+</body>  
+</html> -->
+
+<!DOCTYPE html>  <html>  <head>  
+<script src="jquery.js"></script>  
+<script>  
+$(document).ready(function(){  
+        $("#hide").click(function(){  
+        $("p").toggle(1000);  // $("p").hide(1000); 
+    });    
+});  
+</script>  </head>  <body>  
+<p>  <b>The Poem:</b><br/>  
+Twinkle, twinkle, little star<br/>  
+How I wonder what you are  </p>  
+<button id="hide">Hide/Show</button>  
+  
+</body>  
+</html>
+

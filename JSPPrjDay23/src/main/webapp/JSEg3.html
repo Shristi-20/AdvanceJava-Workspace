@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function fn(){
+	a=prompt("Enter x: ");
+	b= prompt("Enter y: ");
+	x=parseInt(a);
+	y=parseInt(b);
+	
+	res1=confirm("Do you want to calculate now?");
+	if(res1){
+		alert("Result is :"(x+y));
+	}
+	else{
+		alert("As per request no calculation was done!");
+	}
+}
+</script>
+</head>
+<body>
+<button onClick="fn();">Dialog boxes of JS</button>
+
+</body>
+</html>

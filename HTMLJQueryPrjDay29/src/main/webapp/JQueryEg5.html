@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+ <html> 
+  <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script> <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("demo_test.txt", function(data, status){
+        	//data is the responseText, status is the status of XMLHttpRequest object
+            alert("Data: " + data + "\nStatus: " + status);
+            $("div").html("Data: " + data + "<br>Status: " + status);
+            $("p").text("Data: " + data + "<br>Status: " + status);
+        });	    }); 	});
+</script> 
+</head>
+ <body>
+<button>Send an HTTP GET request to a page and get the result back</button>
+<div>
+</div>
+<p></p>
+</body> </html>

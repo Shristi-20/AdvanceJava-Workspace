@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="myScript.js"></script>
+<script>
+function sub(a, b){
+	x=parseInt(a);
+	y=parseInt(b);
+	return x-y;
+}
+function fn1(){
+	x=document.getElementById("x").value;
+	y=document.getElementById("y").value;
+	z=add(x,y);
+	document.getElementById("res").innerHTML="Result = " + z;
+	
+} 
+function   fn2(){
+	x=document.getElementById("x").value;
+	y=document.getElementById("y").value;
+	z=sub(x,y);
+	document.getElementById("res").innerHTML="Result = " + z;
+}
+</script>
+</head>
+<body>
+<input type="text" id="x">
+ <input type="text" id="y">
+ <button onclick="fn1();">Add</button>
+  <button onclick="fn2();">Subtract</button>
+  <p id="res">Result is :<p>
+</body>
+</html>
+
